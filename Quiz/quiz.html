@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{  display: flex;
+          justify-content: center;
+          align-items: center;
+            background: rgb(126, 126, 126);
+        }
+       #quiz{
+        width: 900px;
+        height: 700px;
+        background: salmon;
+        margin-top: 2%;
+        padding: 50px;
+       }
+
+       #question{
+        font-size: 40px;
+       }
+       li{
+      display: flex;
+        padding: 20px;
+        list-style: none;
+        font-size: 35px;
+       }
+       #a_text
+,#b_text
+,#c_text
+,#d_text{
+  color: aliceblue;}
+  
+       
+    </style>
+</head>
+<body>
+    
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+          <h2 id="question">Question text</h2>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer">
+              <label for="a" id="a_text">Question</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="b" class="answer">
+              <label for="b" id="b_text">Question</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="c" class="answer">
+              <label for="c" id="c_text">Question</label>
+            </li>
+    
+            <li>
+              <input type="radio" name="answer" id="d" class="answer">
+              <label for="d" id="d_text">Question</label>
+            </li>
+          </ul>
+        </div>
+       <div class="subbox">
+        <button id="submit">Submit</button>
+       </div>
+      </div>
+      <h1>00:00</h1>
+      <script src="/quiz1.js"></script>
+    </body>   
+</html>
